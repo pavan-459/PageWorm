@@ -39,3 +39,19 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Build outputs (EAS / local builds)
+*.apk
+*.aab
+*.ipa
+builds/
+
+# Secrets: never commit store credentials or env files
+.env
+.env*.local
+*service-account*.json
+google-play-*.json
+credentials.json
+
+# Personal Claude Code settings (shared .claude/settings.json is fine to commit)
+.claude/settings.local.json
